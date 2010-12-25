@@ -1,0 +1,3 @@
+%H2 How to use ETaggy
+%p Point your client to /docs/:doc_id where doc_id is a handle like <em>document1</em> or <em>products.41</em>. This is a RESTful web service so you retrieve a document using the GET method, create a document using the PUT method, update the document using the POST method and delete the document using the DELETE method. 
+%p When creating or updating a document the required parameters are just two: doc_id and body. The doc_id is available from the URL so you only have to provide the JSON document you want to store as the value of the body parameter. Just make sure it's valid JSON and you're using double quotes instead of single quotes for delimiting string values in it.

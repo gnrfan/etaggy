@@ -1,0 +1,9 @@
+:admin:
+    :name: "admin"
+    :password: "4015bc9ee91e437d90df83fb64fbbe312d9c9f05"
+:database:
+    :adapter: "mysql"
+    :database: "etaggy"
+    :username: "root"
+    :password: ""
+    :host: "localhost"

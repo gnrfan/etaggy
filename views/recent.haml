@@ -1,0 +1,12 @@
+%h2 Recently updated
+%ul
+  - @recently_updated.each do |document|
+    %li 
+      %a{:href => document.get_url, :title => document.doc_key}#{document.doc_key}
+      (#{document.updated_at})
+%h2 Recently created
+%ul
+  - @recently_created.each do |document|
+    %li 
+      %a{:href => document.get_url, :title => document.doc_key}#{document.doc_key}
+      (#{document.updated_at})

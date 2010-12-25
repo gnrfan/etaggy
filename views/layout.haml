@@ -1,0 +1,25 @@
+!!! Strict
+%html{html_attrs}
+  %head
+    %title #{"#{@title} : " if @title}Etaggy - ETag-powered simple JSON document store
+    %link{:href => "/stylesheets/main.css", :media => 'screen', :rel => 'stylesheet', :type => 'text/css'}
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width'}
+  %body
+    %header
+      %h1.logo 
+        %a{:href => "/", :title => "Etaggy - Etag-powered simple JSON document store"}ETaggy
+      %p#tagline ETag-powered simple JSON document store.
+    %nav
+      %ul
+        %li
+          %a{:href => "/about/", :title => 'A little more info about the site.'}About
+        %li
+          %a{:href => "/recent/", :title => 'Recent activity.'}Recent activity					
+    %section{:id => 'contents'}
+      = yield
+    %footer
+      %p ETaggy is a Sinatra-powered very simple JSON document store that uses ETags when serving the stored documents back so you can test the level of ETag support in your HTTP client library. 
+      %p 
+        :markdown
+          &copy; 2010 [Antonio Ognio](http://antonio.ognio.com/ "Antonio Ognio").
